@@ -1,0 +1,26 @@
+ <table *ngIf="tableData" class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name </th>
+        <th>Email </th>
+        <th>Phone </th>
+        <th>Source </th>
+        <th>Recipient </th>
+        <th>Amount </th>
+        <th>Scheduledate</th>
+        <th>Reference</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let Send of tableData" >
+        <td> <span>{{Send?.name}}</span> </td>
+        <td> <span>{{Send?.email}}</span> </td>
+        <td> <span>{{Send?.Phonenumberofcounterparty}}</span> </td>
+        <td> <span>{{Send?.Sourceaccountcurrency}}</span> </td>
+        <td> <span>{{Send?.Recipientaccountcurrency}}</span> </td>
+        <td> <span>{{Send?.Amount}}</span> </td>
+        <td> <span>{{Send?.Scheduledate}}</span> </td>
+        <td> <span>{{Send?.Reference}}</span> </td>
+      </tr>
+    </tbody>
+  </table> 

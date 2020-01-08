@@ -1,0 +1,7 @@
+<app-csv (SendData)="Hide($event)" *ngIf="status"></app-csv>
+
+<router-outlet>
+    <app-table-data [tableData]="data"></app-table-data>
+
+</router-outlet>
+    
